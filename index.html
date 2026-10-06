@@ -114,15 +114,7 @@ section>*{position:relative;z-index:1}
 <section data-deco="lados">
   <svg class="ico" aria-hidden="true"><use href="#regalo"/></svg>
   <h2 class="script">Regalo</h2>
-  <p class="texto" style="margin-bottom:24px">Tu presencia es mi mejor regalo. Si deseas tener un detalle conmigo, puedes hacerlo por transferencia al alias que te dejo a continuación.</p>
-  <button class="btn" id="btnRegalo" type="button" aria-expanded="false" aria-controls="datos">Ver datos de la cuenta</button>
-  <div class="datos" id="datos">
-    <dl class="caja">
-      <dt>Alias (C.I.)</dt><dd id="alias">5958969</dd>
-      <dt>Titular</dt><dd>Jorge Rafael Salinas</dd>
-      <button class="btn" id="copiar" type="button">Copiar alias</button>
-    </dl>
-  </div>
+  <p class="texto">El mejor regalo es tu presencia.</p>
 </section>
 
 <section data-deco="lados" style="min-height:70vh">
@@ -168,20 +160,6 @@ section>*{position:relative;z-index:1}
   }
   tick();
 
-  var btn = document.getElementById("btnRegalo"), box = document.getElementById("datos");
-  btn.addEventListener("click", function(){
-    var ab = box.classList.toggle("abierto");
-    btn.setAttribute("aria-expanded", ab ? "true" : "false");
-    btn.textContent = ab ? "Ocultar datos" : "Ver datos de la cuenta";
-  });
-
-  var cop = document.getElementById("copiar");
-  cop.addEventListener("click", function(){
-    var txt = document.getElementById("alias").textContent;
-    function ok(){ cop.textContent = "Copiado"; setTimeout(function(){ cop.textContent = "Copiar alias"; }, 1800); }
-    function no(){ cop.textContent = "Mantén presionado el número"; }
-    try { navigator.clipboard.writeText(txt).then(ok, no); } catch(e) { no(); }
-  });
 })();
 </script>
 </body>
