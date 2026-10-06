@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Danna · Mis XV años</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Gilda+Display&family=Marcellus&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<style>
+:root{--fondo:#ebd3d7;--fondo2:#e4c4ca;--tinta:#4a2d38;--linea:#8e5b6b;--caja:rgba(255,255,255,.38);
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);font-family:'Gilda Display',Georgia,'Times New Roman',serif;line-height:1.5}
+.pagina{max-width:600px;margin:0 auto;background:linear-gradient(180deg,var(--fondo) 0%,var(--fondo2) 100%)}
+section{position:relative;overflow:hidden;text-align:center;padding:72px 34px 80px;min-height:88vh;display:flex;flex-direction:column;align-items:center;justify-content:center}
+section>*{position:relative;z-index:1}
+.deco{position:absolute;z-index:0;pointer-events:none}
+.ball{filter:drop-shadow(0 6px 8px rgba(74,45,56,.25))}
+.spark{filter:drop-shadow(0 0 4px #fff);color:#fff}
+.script{font-family:'Allura','Brush Script MT',cursive;font-weight:400;font-size:clamp(3.6rem,18vw,5rem);line-height:1;margin:14px 0 12px}
+.firma{font-family:'Mrs Saint Delafield','Brush Script MT',cursive;font-weight:400}
+.cel{font-size:clamp(2.4rem,11vw,3.4rem);line-height:1;margin:0}
+.xv{font-family:'Marcellus',Georgia,serif;font-size:clamp(2.2rem,10.5vw,3.2rem);letter-spacing:.02em;margin:0 0 18px;line-height:1.1}
+.nombre{font-size:clamp(3.8rem,19vw,5.8rem);line-height:.82;margin:8px 0 26px}
+.texto{font-size:1.45rem;line-height:1.45;max-width:20em;margin:0}
+.fecha{font-size:2.1rem;margin:18px 0 0}
+.lugar{font-size:2.1rem;line-height:1.2;margin:12px 0 0;max-width:12em}
+.hora{font-size:2.3rem;margin:14px 0 24px}
+.ico{width:78px;height:78px;color:var(--tinta)}
+.btn{display:inline-block;font:inherit;font-size:1.1rem;color:var(--tinta);text-decoration:none;cursor:pointer;background:transparent;
+  border:1px solid var(--tinta);border-radius:8px;padding:12px 30px;transition:background .2s,color .2s}
+.btn:hover,.btn:focus-visible{background:var(--tinta);color:var(--fondo);outline:none}
+.btn:focus-visible{box-shadow:0 0 0 3px rgba(74,45,56,.35)}
+.btn.lleno{background:var(--tinta);color:var(--fondo)}
+.btn.lleno:hover,.btn.lleno:focus-visible{background:var(--linea);border-color:var(--linea)}
+.cuenta{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;width:100%;max-width:380px;margin-top:6px}
+.cuenta div{background:var(--caja);border:1px solid var(--linea);border-radius:8px;padding:14px 2px}
+.cuenta b{display:block;font-weight:400;font-size:2.3rem;line-height:1}
+.cuenta span{font-size:.85rem}
+.datos{max-height:0;overflow:hidden;transition:max-height .45s ease;width:100%;max-width:340px}
+.datos.abierto{max-height:340px}
+.caja{margin:22px 0 0;border:1px solid var(--linea);border-radius:10px;padding:18px;background:var(--caja);text-align:center}
+.caja dt{font-size:.9rem}
+.caja dd{margin:0 0 12px;font-size:1.4rem}
+.caja .btn{padding:8px 20px;font-size:.95rem}
+.hero .ico{display:none}
+.cuerda{width:1px;height:46px;background:var(--linea);margin:-72px auto 0}
+.bola{width:150px;height:150px}
+@media (prefers-reduced-motion:reduce){.datos{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <radialGradient id="gb" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff6f7"/><stop offset=".45" stop-color="#dbb0ba"/><stop offset="1" stop-color="#8a5666"/></radialGradient>
+  <radialGradient id="gs" cx=".4" cy=".35" r=".75"><stop offset=".55" stop-color="#3a1f29" stop-opacity="0"/><stop offset="1" stop-color="#3a1f29" stop-opacity=".5"/></radialGradient>
+  <pattern id="grid" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width=".6"/><rect x="1" y="1" width="2" height="2" fill="#fff" fill-opacity=".22"/></pattern>
+ </defs>
+ <symbol id="disco" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="48" fill="url(#gb)"/><circle cx="50" cy="50" r="48" fill="url(#grid)"/><circle cx="50" cy="50" r="48" fill="url(#gs)"/>
+  <path d="M8 38Q50 28 92 38L93 52Q50 42 7 52Z" fill="#fff" opacity=".16"/>
+ </symbol>
+ <symbol id="chispa" viewBox="0 0 100 100"><path d="M50 0C53 36 64 47 100 50 64 53 53 64 50 100 47 64 36 53 0 50 36 47 47 36 50 0Z" fill="currentColor"/></symbol>
+ <symbol id="iglesia" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+  <path d="M32 1v9M28.5 4.5h7M22 27l10-15 10 15M24 27v31M40 27v31M24 27h16M8 58V39l16-9M56 58V39L40 30M4 58h56M28 58V46a4 4 0 0 1 8 0v12M12 45v8M16 45v8M48 45v8M52 45v8M12 45h4M48 45h4"/>
+ </symbol>
+ <symbol id="pin" viewBox="0 0 64 64"><path d="M32 56C24 45 14 36 14 25a18 18 0 0 1 36 0c0 11-10 20-18 31z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="32" cy="25" r="7" fill="none" stroke="currentColor" stroke-width="2.4"/><ellipse cx="32" cy="57" rx="14" ry="3.2" fill="currentColor"/></symbol>
+ <symbol id="regalo" viewBox="0 0 64 64"><rect x="14" y="30" width="36" height="28" fill="currentColor"/><rect x="9" y="22" width="46" height="9" fill="currentColor"/><path d="M32 22C22 22 16 16 20 11s11 2 12 11zM32 22c10 0 16-6 12-11s-11 2-12 11z" fill="currentColor"/><path d="M32 22v36" stroke="#ebd3d7" stroke-width="2.4"/></symbol>
+ <symbol id="fiesta" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M32 3v14"/><circle cx="32" cy="38" r="20"/><ellipse cx="32" cy="38" rx="9" ry="20"/><path d="M12 38h40M15 28h34M15 48h34"/></symbol>
+</svg>
+
+<main class="pagina">
+
+<section class="hero" data-deco="hero">
+  <div class="deco" style="left:50%;top:-4px;transform:translateX(-50%)"><div class="cuerda" style="margin:0 auto;height:30px"></div><svg class="bola ball" viewBox="0 0 100 100" aria-hidden="true"><use href="#disco"/></svg></div>
+  <div style="height:150px" aria-hidden="true"></div>
+  <p class="firma cel">Celebremos Juntos</p>
+  <h1 class="xv">MIS XV AÑOS</h1>
+  <div class="firma nombre">Danna<br>Domínguez</div>
+  <p class="texto">Quince años se cumplen una sola vez, y quiero vivirlos con las personas que más quiero. Acompáñame en una noche de alegría, música y recuerdos que guardaré siempre.</p>
+</section>
+
+<section data-deco="lados">
+  <svg class="ico" aria-hidden="true"><use href="#iglesia"/></svg>
+  <p class="fecha">10/10/2026</p>
+  <h2 class="script">Misa</h2>
+  <svg class="ico" style="width:62px;height:62px" aria-hidden="true"><use href="#pin"/></svg>
+  <p class="lugar">Vicaría Divino Espíritu</p>
+  <p class="hora">19:00 hs</p>
+  <a class="btn" href="https://share.google/auEkZhcadaV4ElIde" target="_blank" rel="noopener">Ver ubicación</a>
+</section>
+
+<section data-deco="lados">
+  <svg class="ico" aria-hidden="true"><use href="#fiesta"/></svg>
+  <p class="fecha">10/10/2026</p>
+  <h2 class="script">Fiesta</h2>
+  <svg class="ico" style="width:62px;height:62px" aria-hidden="true"><use href="#pin"/></svg>
+  <p class="lugar">Copacons Ltda</p>
+  <p class="hora">21:00 hs</p>
+  <a class="btn" href="https://share.google/a74qHlKylJJatLlNy" target="_blank" rel="noopener">Ver ubicación</a>
+</section>
+
+<section data-deco="lados" style="min-height:60vh">
+  <h2 class="script">Faltan</h2>
+  <div class="cuenta" aria-live="polite" id="cuenta">
+    <div><b id="d">0</b><span>días</span></div>
+    <div><b id="h">0</b><span>horas</span></div>
+    <div><b id="m">0</b><span>min</span></div>
+    <div><b id="s">0</b><span>seg</span></div>
+  </div>
+</section>
+
+<section data-deco="lados">
+  <svg class="ico" aria-hidden="true"><use href="#regalo"/></svg>
+  <h2 class="script">Regalo</h2>
+  <p class="texto" style="margin-bottom:24px">Tu presencia es mi mejor regalo. Si deseas tener un detalle conmigo, puedes hacerlo por transferencia al alias que te dejo a continuación.</p>
+  <button class="btn" id="btnRegalo" type="button" aria-expanded="false" aria-controls="datos">Ver datos de la cuenta</button>
+  <div class="datos" id="datos">
+    <dl class="caja">
+      <dt>Alias (C.I.)</dt><dd id="alias">5958969</dd>
+      <dt>Titular</dt><dd>Jorge Rafael Salinas</dd>
+      <button class="btn" id="copiar" type="button">Copiar alias</button>
+    </dl>
+  </div>
+</section>
+
+<section data-deco="lados" style="min-height:70vh">
+  <h2 class="script">¿Vienes?</h2>
+  <p class="texto" style="margin-bottom:26px">Confirma tu asistencia por WhatsApp.</p>
+  <a class="btn lleno" id="confirmar" target="_blank" rel="noopener" href="#">Confirmar asistencia</a>
+  <p class="firma cel" style="margin-top:44px">Te espero</p>
+</section>
+
+</main>
+<script>
+(function(){
+  /* ====== DATOS EDITABLES ====== */
+  var FECHA_EVENTO = "2026-10-10T19:00:00-03:00";
+  var WHATSAPP = "595972764219";
+  var MENSAJE = "Hola! Quiero confirmar mi asistencia para el cumpleaños de Danna";
+  /* ============================= */
+
+  function ball(st){return '<svg class="deco ball" style="'+st+'" viewBox="0 0 100 100" aria-hidden="true"><use href="#disco"/></svg>';}
+  function sp(st){return '<svg class="deco spark" style="'+st+'" viewBox="0 0 100 100" aria-hidden="true"><use href="#chispa"/></svg>';}
+  var lados = ball('width:150px;height:150px;left:-62px;top:18px')+ball('width:130px;height:130px;right:-58px;top:48%')+ball('width:130px;height:130px;left:-56px;bottom:22px')+
+    sp('width:90px;height:90px;right:6px;top:14px;opacity:.8')+sp('width:54px;height:54px;right:60px;top:92px;opacity:.7')+sp('width:70px;height:70px;right:-14px;top:150px;opacity:.6')+
+    sp('width:64px;height:64px;left:14px;top:46%;opacity:.7')+sp('width:40px;height:40px;left:46px;top:58%;opacity:.6')+sp('width:60px;height:60px;right:14px;bottom:70px;opacity:.6');
+  var hero = sp('width:90px;height:90px;right:8px;top:30px;opacity:.8')+sp('width:60px;height:60px;left:12px;top:46%;opacity:.7')+sp('width:46px;height:46px;right:30px;top:58%;opacity:.6')+
+    ball('width:84px;height:84px;left:-34px;bottom:30px')+ball('width:84px;height:84px;right:-34px;bottom:110px');
+  var secs = document.querySelectorAll('section[data-deco]');
+  for (var i=0;i<secs.length;i++){
+    secs[i].insertAdjacentHTML('afterbegin', secs[i].getAttribute('data-deco')==='hero' ? hero : lados);
+  }
+
+  document.getElementById("confirmar").href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(MENSAJE);
+
+  var meta = new Date(FECHA_EVENTO).getTime();
+  function tick(){
+    var t = meta - Date.now();
+    if (t <= 0) { document.getElementById("cuenta").innerHTML = '<p class="texto" style="grid-column:1/-1">¡Hoy es el gran día!</p>'; return; }
+    var s = Math.floor(t/1000);
+    document.getElementById("d").textContent = Math.floor(s/86400);
+    document.getElementById("h").textContent = Math.floor(s%86400/3600);
+    document.getElementById("m").textContent = Math.floor(s%3600/60);
+    document.getElementById("s").textContent = s%60;
+    setTimeout(tick, 1000);
+  }
+  tick();
+
+  var btn = document.getElementById("btnRegalo"), box = document.getElementById("datos");
+  btn.addEventListener("click", function(){
+    var ab = box.classList.toggle("abierto");
+    btn.setAttribute("aria-expanded", ab ? "true" : "false");
+    btn.textContent = ab ? "Ocultar datos" : "Ver datos de la cuenta";
+  });
+
+  var cop = document.getElementById("copiar");
+  cop.addEventListener("click", function(){
+    var txt = document.getElementById("alias").textContent;
+    function ok(){ cop.textContent = "Copiado"; setTimeout(function(){ cop.textContent = "Copiar alias"; }, 1800); }
+    function no(){ cop.textContent = "Mantén presionado el número"; }
+    try { navigator.clipboard.writeText(txt).then(ok, no); } catch(e) { no(); }
+  });
+})();
+</script>
+</body>
+</html>
